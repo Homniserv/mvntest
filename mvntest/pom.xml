@@ -34,239 +34,58 @@
 		<junit5.version>5.1.1</junit5.version>
 		<junitplatform.version>1.0.0</junitplatform.version>
 
+
+
+
+
+
+
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<junit.jupiter.version>5.1.1</junit.jupiter.version>
+		<junit.vintage.version>5.1.1</junit.vintage.version>
+		<junit.platform.version>1.1.1</junit.platform.version>
 	</properties>
 
 
 	<dependencies>
-		<!-- <dependency> -->
-		<!-- <groupId>junit</groupId> -->
-		<!-- <artifactId>junit</artifactId> -->
-		<!-- <version>3.8.1</version> -->
-		<!-- <scope>test</scope> -->
-		<!-- </dependency> -->
-
-
 		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-core</artifactId>
-			<version>${struts2.version}</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-convention-plugin</artifactId>
-			<version>${struts2.version}</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-spring-plugin 
-			https://stackoverflow.com/questions/10735774/struts2-spring-plugin-it-complains-about-getbean-of-webapplicationcontext-no -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-spring-plugin</artifactId>
-			<version>${struts2.version}</version>
-		</dependency>
-
-		<!-- https://struts.apache.org/getting-started/how-to-create-a-struts2-web-application.html -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.logging.log4j</groupId> -->
-		<!-- <artifactId>log4j-core</artifactId> -->
-		<!-- <version>${log4j2.version}</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.logging.log4j</groupId> -->
-		<!-- <artifactId>log4j-api</artifactId> -->
-		<!-- <version>${log4j2.version}</version> -->
-		<!-- </dependency> -->
-
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.logging.log4j</groupId> -->
-		<!-- <artifactId>log4j</artifactId> -->
-		<!-- <version>${log4j2.version}</version> -->
-		<!-- <type>pom</type> -->
-		<!-- </dependency> -->
-
-
-
-		<!-- HTTPS://LOGGING.APACHE.ORG/LOG4J/2.X/MAVEN-ARTIFACTS.HTML -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>${log4j2.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>${log4j2.version}</version>
-		</dependency>
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.logging.log4j</groupId> -->
-		<!-- <artifactId>log4j</artifactId> -->
-		<!-- <version>2.11.0</version> -->
-		<!-- <type>pom</type> -->
-		<!-- </dependency> -->
-
-
-
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-core</artifactId> -->
-		<!-- <version>${springframework.version}</version> -->
-		<!-- </dependency> -->
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web 
-			already transitive -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-web</artifactId> -->
-		<!-- <version>${springframework.version}</version> -->
-		<!-- </dependency> -->
-
-		<!-- conflicting with Struts -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-webmvc</artifactId> -->
-		<!-- <version>${springframework.version}</version> -->
-
-		<!-- </dependency> -->
-
-
-
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-context</artifactId> -->
-		<!-- <version>${springframework.version}</version> -->
-		<!-- </dependency> -->
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-beans</artifactId> -->
-		<!-- <version>${springframework.version}</version> -->
-		<!-- </dependency> -->
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${springframework.version}</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-struts 
-			http://struts.apache.org/plugins/spring/ -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-struts</artifactId>
-			<version>3.2.8.RELEASE</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/antlr/antlr dependency -->
-		<!-- <dependency> -->
-		<!-- <groupId>antlr</groupId> -->
-		<!-- <artifactId>antlr</artifactId> -->
-		<!-- <version>2.7.2</version> -->
-		<!-- </dependency> -->
-
-		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency>
-
-
-		<!-- http://www.codejava.net/frameworks/hibernate/hibernate-hello-world-tutorial-for-beginners-with-eclipse-and-mysql -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>5.2.6.Final</version>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.40</version>
-		</dependency>
-		<!-- ************* -->
-
-
-
-
-
-
-		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-surefire-provider -->
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-surefire-provider</artifactId>
-			<version>${junitplatform.version}</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-engine</artifactId>
-			<version>${junitplatform.version}</version>
-		</dependency>
-
-		<!-- https://stackoverflow.com/questions/46717693/eclipse-no-tests-found-using-junit-5-caused-by-noclassdeffounderror/46723851 
-			main solution and following:launcher -->
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>${junitplatform.version}</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.1.0</version>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>${junit.vintage.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Only required to run tests in an IDE that bundles an older version -->
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-launcher</artifactId>
+			<version>${junit.platform.version}</version>
 			<scope>test</scope>
 		</dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.7.0</version>
-		</dependency>
-
-
 	</dependencies>
 	<build>
-		<finalName>tennisJ2EEdtc</finalName>
+		<finalName>mvntest</finalName>
 
 
 		<!-- https://maven.apache.org/plugins/maven-resources-plugin/examples/encoding.html -->
