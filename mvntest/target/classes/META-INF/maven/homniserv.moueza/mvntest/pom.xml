@@ -55,7 +55,14 @@
 
 		<!-- https://maven.apache.org/plugins/maven-resources-plugin/examples/encoding.html -->
 		<plugins>
-
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
